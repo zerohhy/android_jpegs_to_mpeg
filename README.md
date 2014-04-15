@@ -1,4 +1,4 @@
-# Forker from Smart Gallery with Single and Multiple image pick action.
+# Forked from Smart Gallery with Single and Multiple image pick action.
 
 
 ## Features
