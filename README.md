@@ -1,6 +1,11 @@
-# Smart Gallery with Single and Multiple image pick action.
+# Forker from Smart Gallery with Single and Multiple image pick action.
+
 
 ## Features
+	#Using multi image loading interface to implement android jpeg to mpeg compression
+	#loading multiple images (jpeg) combine and compress them into a mpeg video
+
+
  * luminous.ACTION_PICK for choosing single image.
  * luminous.ACTION_MULTIPLE_PICK for choosing multiple image.
  * Also custom Theme.
