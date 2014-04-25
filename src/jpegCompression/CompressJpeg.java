@@ -72,6 +72,7 @@ public class CompressJpeg {
         BufferedWriter br = new BufferedWriter(fr);  
         PrintWriter out = new PrintWriter(br);
         
+        
         int i1,j1;
 		int [][] temp = new int[blockSize][blockSize];
 		int vBlocks = component.length/blockSize;

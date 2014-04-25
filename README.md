@@ -1,6 +1,17 @@
 # Forked from Smart Gallery with Single and Multiple image pick action.
 
 
+Android client Feature Breakdown
+Select Image Mode to Picking one or multiple image from android SD card
+In Multi image selection mode, images can be and selected or deselected after clicking 
+After selection, clicked "ok" button to load the image(s) path to starting function (jpegCompression.CompressJpeg.start_point(path)).
+The function will open the image as a bitmap, then but the bitmap into a 3d rgb array. the rgb the array will be segmented and saved as csv file for debugging
+the rgb array is then passed into function(compressComponent(rgba[i],i)) layer by layer. compressComponent will cut each layer into 8x8 blocks, and pass the blocks into Discrete cosine transform. DCT will try to reduce the block into matrix with lower right corner values with all zero, only the useful values on the upper left corner will be written to a csv file to try reduce the over all size. after all images are processed and compressed into csv files, the bitmap images will display on the android screen.
+
+
+
+
+
 ## Features
 	#Using multi image loading interface to implement android jpeg to mpeg compression
 	#loading multiple images (jpeg) combine and compress them into a mpeg video
